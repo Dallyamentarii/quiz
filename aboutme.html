@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="materi.html">Materi Sekarang</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="aboutme.html">About me</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="kontak">
+  <div class="kontak">
+  <h2> Komentar Dan Saran </h2><br>
+    <form>
+    <table class="tablekontak">
+    <tr>
+      <td class="kolom1"> Nama Lengkap : </td>
+      <td class="kolom2"> <INPUT TYPE=text NAME=txtNama size="50"> </td>
+    </tr>
+    <tr>
+      <td> E-mail : </td>
+      <td> <INPUT TYPE=text NAME=txtemail size="50"> </td>
+    </tr>
+    <tr>
+      <td> No. HP : </td>
+      <td> <INPUT TYPE=text NAME=txtnohp size="50"> </td>
+    </tr>
+    <tr>
+      <td> Kota : </td>
+      <td> <INPUT TYPE=text NAME=txtkota size="50"> </td>
+    </tr>
+    <tr>
+      <td>  Pesan : </td>
+      <td> <textarea cols="80" rows="10"></textarea> </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>	
+    
+    <tr>
+      <td>&nbsp;</td>
+      <td><INPUT TYPE=submit NAME=kirim value=&nbsp;&nbsp;kirim&nbsp;&nbsp;>&nbsp;&nbsp;<INPUT TYPE=Reset Name=reset Value=&nbsp;&nbsp;reset&nbsp;&nbsp;> </td>
+    </tr>
+    
+  </table>
+  </form>
+  </div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<div class='footer'>
+  <p>Copyright 2019 - <a href=''>Kelompok 4</a></p>
+</div>
+
+</body>
+</html>

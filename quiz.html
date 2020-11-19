@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="materi.html">Materi Sekarang</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="aboutme.html">About me</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="table-input" style="padding: 10px;">
+  
+
+<h2>Menghitung Luas Segitiga</h2>
+<table>
+  <tr>
+    <td>Alas</td>
+    <td>:</td>
+    <td><input type="text" name="" id="alasSegitiga"></td>
+  </tr>
+  <tr>
+    <td>Tinggi</td>
+    <td>:</td>
+    <td><input type="text" name="" id="tinggiSegitiga"></td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td><input type="button" value="Hitung" onclick="hitung()"></td>
+  </tr>
+  <tr>
+    <td>Hasil</td>
+    <td> : </td>
+    <td><p id="hasil"></p></td>
+</tr>
+</table>
+</div>
+<div class="table-input" style="padding: 10px;">
+  
+
+  <h2>Keliling Lingkaran</h2>
+  <table>
+    <tr>
+      <td>Jari-Jari</td>
+      <td>:</td>
+      <td><input type="text" name="" id="jariLingkaran"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><input type="button" value="Hitung" onclick="hitungLingkaran()"></td>
+    </tr>
+    <tr>
+      <td>Hasil</td>
+      <td> : </td>
+      <td><p id="hasilLingkaran"></p></td>
+  </tr>
+  </table>
+  </div>
+  <div class="table-input" style="padding: 10px;">
+  
+
+    <h2>Menghitung Luas persegi</h2>
+    <table>
+      <tr>
+        <td>sisi</td>
+        <td>:</td>
+        <td><input type="text" name="" id="sisipersegi"></td>
+      </tr>
+      <tr>
+        <td>sisi1</td>
+        <td>:</td>
+        <td><input type="text" name="" id="sisipersegi1"></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td><input type="button" value="Hitung" onclick="hitungpersegi()"></td>
+      </tr>
+      <tr>
+        <td>Hasil</td>
+        <td> : </td>
+        <td><p id="hasil2"></p></td>
+    </tr>
+    </table>
+    </div>
+    <div class="table-input" style="padding: 10px;">
+  
+
+      <h2>Menghitung Luas Jajar Genjang</h2>
+      <table>
+        <tr>
+          <td>Alas</td>
+          <td>:</td>
+          <td><input type="text" name="" id="alasJajar"></td>
+        </tr>
+        <tr>
+          <td>Tinggi</td>
+          <td>:</td>
+          <td><input type="text" name="" id="tinggiJajar"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><input type="button" value="Hitung" onclick="hitungJajr()"></td>
+        </tr>
+        <tr>
+          <td>Hasil</td>
+          <td> : </td>
+          <td><p id="hasilJajar"></p></td>
+      </tr>
+      </table>
+      </div>
+      <div class="table-input" style="padding: 10px;">
+  
+
+        <h2>Menghitung Luas Persegi Panjang</h2>
+        <table>
+          <tr>
+            <td>Panjang</td>
+            <td>:</td>
+            <td><input type="text" name="" id="panjangPP"></td>
+          </tr>
+          <tr>
+            <td>Lebar</td>
+            <td>:</td>
+            <td><input type="text" name="" id="lebarPP"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td><input type="button" value="Hitung" onclick="hitungPP()"></td>
+          </tr>
+          <tr>
+            <td>Hasil</td>
+            <td> : </td>
+            <td><p id="hasilPP"></p></td>
+        </tr>
+        </table>
+        </div>
+        <div class="table-input" style="padding: 10px;">
+  
+
+          <h2>Menghitung Luas Trapesium</h2>
+          <table>
+            <tr>
+              <td>Sisi Sejajar</td>
+              <td>:</td>
+              <td><input type="text" name="" id="SisiTP"></td>
+            </tr>
+            <tr>
+              <td>Tinggi</td>
+              <td>:</td>
+              <td><input type="text" name="" id="TinggiTP"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="Hitung" onclick="hitungTP()"></td>
+            </tr>
+            <tr>
+              <td>Hasil</td>
+              <td> : </td>
+              <td><p id="hasilTP"></p></td>
+          </tr>
+          </table>
+          </div>
+          <div class="table-input" style="padding: 10px;">
+  
+
+            <h2>Menghitung Luas Layang-Layang</h2>
+            <table>
+              <tr>
+                <td>Diagonal 1</td>
+                <td>:</td>
+                <td><input type="text" name="" id="D1"></td>
+              </tr>
+              <tr>
+                <td>Diagonal 2</td>
+                <td>:</td>
+                <td><input type="text" name="" id="D2"></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td><input type="button" value="Hitung" onclick="hitungD()"></td>
+              </tr>
+              <tr>
+                <td>Hasil</td>
+                <td> : </td>
+                <td><p id="hasilD"></p></td>
+            </tr>
+            </table>
+            </div>
+              <div class="table-input" style="padding: 10px;">
+  
+
+                <h2>Menghitung Luas Belah Ketupat</h2>
+                <table>
+                  <tr>
+                    <td>Diagonal 1</td>
+                    <td>:</td>
+                    <td><input type="text" name="" id="D3"></td>
+                  </tr>
+                  <tr>
+                    <td>Diagonal 2</td>
+                    <td>:</td>
+                    <td><input type="text" name="" id="D4"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td><input type="button" value="Hitung" onclick="hitungD2()"></td>
+                  </tr>
+                  <tr>
+                    <td>Hasil</td>
+                    <td> : </td>
+                    <td><p id="hasilD2"></p></td>
+                </tr>
+                </table>
+                </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+    function hitung(){
+      let alas =  document.getElementById('alasSegitiga').value;
+      let tinggi =  document.getElementById('tinggiSegitiga').value;
+      
+      let hasil =  alas * tinggi / 2;
+      document.getElementById('hasil').innerHTML = 'Luas Segitiga '+hasil;
+    }
+    function hitungpersegi(){
+      let sisi =  document.getElementById('sisipersegi').value;
+      let sisi1 =  document.getElementById('sisipersegi1').value;
+      
+      let hasil =  sisi * sisi1 ;
+      document.getElementById('hasil2').innerHTML = ' Luas Persegi '+hasil;
+    }
+    function hitungLingkaran(){
+      let sisi =  document.getElementById('jariLingkaran').value;
+      
+      let hasil = jariLingkaran * 3.14 ;
+      document.getElementById('hasilLingkaran').innerHTML = ' Keliling Lingkaran '+hasil;
+    }
+    function hitungJajr(){
+      let alas =  document.getElementById('alasJajar').value;
+      let tinggi =  document.getElementById('tinggiJajar').value;
+      
+      let hasil =  alas * tinggi ;
+      document.getElementById('hasilJajar').innerHTML = ' Luas Jajar Genjang '+hasil;
+    }
+    function hitungPP(){
+      let Panjang =  document.getElementById('panjangPP').value;
+      let Lebar =  document.getElementById('lebarPP').value;
+      
+      let hasil =  Panjang * Lebar ;
+      document.getElementById('hasilPP').innerHTML = ' Luas Persegi Panjang '+hasil;
+    }
+    function hitungTP(){
+      let Sisi =  document.getElementById('SisiTP').value;
+      let Tinggi =  document.getElementById('TinggiTP').value;
+      
+      let hasil =  Sisi * Tinggi * 1/2 ;
+      document.getElementById('hasilTP').innerHTML = ' Luas Trapesium '+hasil;
+    }
+    function hitungD(){
+      let Diagonal1 =  document.getElementById('D1').value;
+      let Diagonal2 =  document.getElementById('D2').value;
+      
+      let hasil =  1/2 * Diagonal1 * Diagonal2 ;
+      document.getElementById('hasilD').innerHTML = ' Luas Layang-Layang '+hasil;
+    }
+    function hitungD2(){
+      let Diagonal1 =  document.getElementById('D3').value;
+      let Diagonal2 =  document.getElementById('D4').value;
+      
+      let hasil =  1/2 * Diagonal1 * Diagonal2 ;
+      document.getElementById('hasilD2').innerHTML = ' Luas Belah Ketupat '+hasil;
+    }
+    
+</script>
+<div class='footer'>
+  <p>Copyright 2019 - <a href=''>Kelompok 4</a></p>
+</div>
+
+</body>
+</html>
